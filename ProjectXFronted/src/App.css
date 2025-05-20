@@ -1,0 +1,14 @@
+.app-container {
+  background-color: black;
+  position: absolute;
+  height: 87.1vh;
+  width: 100%;
+}
+
+.FilterComponent {
+  background: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+}            

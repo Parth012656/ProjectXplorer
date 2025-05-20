@@ -1,0 +1,75 @@
+.favorites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .favorite-card {
+    width: 280px;
+    min-height: 220px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffe6e6; /* Light pinkish red */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .favorite-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #1C1C1C;
+  }
+  
+  .project-description {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project-difficulty,
+  .project-rating,
+  .project-domain {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin: 5px 0;
+  }
+  
+  .remove-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+  }
+  
+  .no-favorites-message {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 50px;
+  }
+  

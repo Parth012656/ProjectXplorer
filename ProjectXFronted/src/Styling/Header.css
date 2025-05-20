@@ -1,0 +1,27 @@
+.Heading h1{
+    background: linear-gradient(135deg,red,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 4em;
+  }
+  .NavLinks span {
+    background: linear-gradient(135deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1em;
+    margin-left: 20px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .NavLinks span:hover {
+    background: rgba(0, 0, 0, 0.1); /* light hover bg */
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: initial; /* revert to normal text color */
+    color: #333;
+    border-radius: 12px;
+  }
+  
