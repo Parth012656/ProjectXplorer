@@ -10,7 +10,7 @@ import lombok.Setter;
 public class Description {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "des_id")
     private int desIid;
 

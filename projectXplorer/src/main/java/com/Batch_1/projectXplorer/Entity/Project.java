@@ -24,14 +24,15 @@ public class Project {
     private Integer rating;
 
     @Column(name = "domain")
-    private String Domain;
+    private String domain;
 
-    @ManyToOne
-    @JoinColumn(name = "area_id" ,referencedColumnName = "a_id")
-    @JsonIgnore
-    private Area area;
+//    @ManyToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "area_id" ,referencedColumnName = "a_id")
 
-    @OneToOne
+    @Column(name = "area_id")
+    private int areaId;
+
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "des_id" ,referencedColumnName = "des_id")
     private Description description;
 
@@ -76,19 +77,19 @@ public class Project {
     }
 
     public String getDomain() {
-        return Domain;
+        return domain;
     }
 
     public void setDomain(String domain) {
-        Domain = domain;
+        this.domain = domain;
     }
 
-    public Area getArea() {
-        return area;
+    public int getAreaId() {
+        return areaId;
     }
 
-    public void setArea(Area area) {
-        this.area = area;
+    public void setArea(int areaId) {
+        this.areaId = areaId;
     }
 
     public Description getDescription() {
